@@ -1,0 +1,31 @@
+.auth {
+    border: 5px solid rgba(201, 201, 201, 0.4);
+}
+
+.auth .nav-tabs {
+    border: none;
+    width: 100%;
+}
+
+.auth .nav-tabs .nav-item {
+    width: 50%;
+}
+
+.auth .nav-tabs .nav-link {
+    text-transform: uppercase;
+    text-align: start;
+    width: 100%;
+}
+
+.auth .nav-tabs .nav-link.active {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.auth_social_text:before {
+    content: " - - - - - - - - - - ";
+}
+
+.auth_social_text:after {
+    content: " - - - - - - - - - - ";
+}
