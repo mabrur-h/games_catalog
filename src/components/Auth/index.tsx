@@ -1,8 +1,7 @@
-import { Nav, Row, Col, Tabs, Tab, Form, Button, ButtonGroup } from "react-bootstrap"
-import "./login.style.css"
+import {Row, Col, Tabs, Form, Button, ButtonGroup, Tab} from "react-bootstrap"
+import "./style.css"
 
-function LoginComponent() {
-
+export default function AuthComponent() {
     return (
         <Row className="justify-content-md-center my-5">
             <Col xs lg="4">
@@ -69,5 +68,3 @@ function LoginComponent() {
         </Row>
     )
 }
-
-export default LoginComponent

@@ -1,15 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Button from "react-bootstrap/Button"
-import LoginComponent from "./components/login.component";
+import AuthPage from "./pages/Auth";
+import HomePage from "./pages/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <LoginComponent />
-    </div>
-  );
+    return (
+        <div className="App">
+            {/*<AuthPage />*/}
+            <HomePage/>
+        </div>
+    );
 }
 
 export default App;
