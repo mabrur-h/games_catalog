@@ -3,3 +3,24 @@
     border-radius: 0 !important;
     border-bottom: solid 1px #555555 !important;
 }
+
+.collapse-button {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.collapse-button:active {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.collapse-button:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.collapse-symbol {
+    font-size: 24px;
+    color: black;
+    background-color: transparent;
+}
