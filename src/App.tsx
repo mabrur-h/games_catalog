@@ -6,8 +6,8 @@ import HomePage from "./pages/Home";
 function App() {
     return (
         <div className="App">
-            {/*<AuthPage />*/}
-            <HomePage/>
+            <AuthPage />
+            {/*<HomePage/>*/}
         </div>
     );
 }
