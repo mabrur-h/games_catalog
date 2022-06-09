@@ -1,6 +1,6 @@
-import NavbarComponent from "../../components/Navbar";
-import HeaderComponent from "../../components/Header";
-import GameCardComponent from "../GameCard";
+import NavbarComponent from "../components/Navbar";
+import HeaderComponent from "../components/Header";
+import GameCardComponent from "../components/GameCard";
 import {Row} from "react-bootstrap";
 
 
