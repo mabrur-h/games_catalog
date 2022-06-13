@@ -6,11 +6,11 @@ import {useEffect, useState} from "react";
 import {useNavigate} from 'react-router-dom'
 import {useDispatch, useSelector} from "react-redux";
 import {toast} from "react-toastify";
-import {login, reset} from "../features/auth/authSlice";
+import {login, reset} from "../services/auth/authSlice";
 import Spinner from "../components/Spinner";
 
 export default function AuthComponent() {
-    const [formData, setFormData] = useState({
+   /* const [formData, setFormData] = useState({
         email: '',
         password: ''
     })
@@ -46,6 +46,8 @@ export default function AuthComponent() {
     const onSubmit = (e) => {
         e.preventDefault()
 
+        console.log(e)
+
         const userData = {
             email,
             password
@@ -56,7 +58,7 @@ export default function AuthComponent() {
         if (isLoading) {
             return <Spinner />
         }
-    }
+    }*/
 
     return (
         <Row className="justify-content-md-center my-5">
