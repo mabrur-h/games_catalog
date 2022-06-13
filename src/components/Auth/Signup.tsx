@@ -57,40 +57,40 @@ export default function SignupComponent() {
   }
 
   return (<Form className="text-start my-3" onSubmit={onSignupSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicName">
-        <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter name"
-          name="name"
-          value={name}
-          onChange={onChange}
-        />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formSignupEmail">
-        <Form.Label>Email Address</Form.Label>
-        <Form.Control
-          type="email"
-          placeholder="Enter email"
-          name="email"
-          value={email}
-          onChange={onChange}
-        />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          placeholder="Password"
-          name="password"
-          value={password}
-          onChange={onChange}
-        />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Button variant="danger" type="submit" className="px-3">
-          Join now
-        </Button>
-      </Form.Group>
-    </Form>)
+    <Form.Group className="mb-3" controlId="formBasicName">
+      <Form.Label>Name</Form.Label>
+      <Form.Control
+        type="text"
+        placeholder="Enter name"
+        name="name"
+        value={name}
+        onChange={onChange}
+      />
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formSignupEmail">
+      <Form.Label>Email Address</Form.Label>
+      <Form.Control
+        type="email"
+        placeholder="Enter email"
+        name="email"
+        value={email}
+        onChange={onChange}
+      />
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Label>Password</Form.Label>
+      <Form.Control
+        type="password"
+        placeholder="Password"
+        name="password"
+        value={password}
+        onChange={onChange}
+      />
+    </Form.Group>
+    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      <Button variant="danger" type="submit" className="px-3">
+        Join now
+      </Button>
+    </Form.Group>
+  </Form>)
 }

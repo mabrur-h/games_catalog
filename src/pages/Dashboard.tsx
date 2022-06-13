@@ -5,23 +5,23 @@ import {Row} from "react-bootstrap";
 
 
 export default function HomePage() {
-    return (
-        <div>
-            <NavbarComponent />
-            <HeaderComponent />
-            <div className="container-fluid">
-                <Row>
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                    <GameCardComponent />
-                </Row>
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <NavbarComponent/>
+      <HeaderComponent/>
+      <div className="container-fluid">
+        <Row>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+          <GameCardComponent/>
+        </Row>
+      </div>
+    </div>
+  )
 }
