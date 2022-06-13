@@ -7,6 +7,7 @@ import {toast} from "react-toastify";
 import {register, reset} from "../../services/auth/authSlice";
 import UserType from "../../types/user.type";
 import Spinner from "../Spinner";
+import {AppDispatch} from "../../app/store";
 
 export default function SignupComponent() {
     const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ export default function SignupComponent() {
     const {name, email, password} = formData
 
     const navigate = useNavigate()
-    const dispatch = useDispatch()
+    const dispatch = useDispatch<AppDispatch>()
 
     const { user, isLoading, isError, isSuccess, message } = useSelector(
         (state: any) => state.auth
