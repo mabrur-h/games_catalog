@@ -1,5 +1,4 @@
 import {Button, ButtonGroup, Form, Tab} from "react-bootstrap";
-import "./style.css"
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
@@ -8,9 +7,10 @@ import {register, reset} from "../../services/auth/authSlice";
 import UserType from "../../types/user.type";
 import Spinner from "../Spinner";
 import {AppDispatch} from "../../app/store";
+import "./style.css"
 
 export default function SignupComponent() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<UserType>({
         name: '',
         email: '',
         password: ''
@@ -56,9 +56,7 @@ export default function SignupComponent() {
             password
         }
 
-        console.log(userData)
-
-        // dispatch(register(userData))
+        dispatch(register(userData))
 
         if (isLoading) {
             return <Spinner />

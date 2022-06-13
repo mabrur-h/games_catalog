@@ -1,6 +1,6 @@
 export default interface UserType {
-    id?: string | null,
-    name?: string | null,
+    id?: string,
+    name?: string,
     email?: string,
     password?: string,
 }

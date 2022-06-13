@@ -13,7 +13,7 @@ const register = async (userData: UserType) => {
     return response.data
 }
 
-const login = async (userData: object) => {
+const login = async (userData: UserType) => {
     const response = await axios.post(API_URL, userData)
 
     if (response.data) {

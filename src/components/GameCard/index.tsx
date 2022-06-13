@@ -2,7 +2,7 @@ import {Card, Button, Row, Col, Image} from 'react-bootstrap'
 import {useState} from "react";
 
 export default function GameCardComponent() {
-    const [isLiked, setIsLiked] = useState(false);
+    const [isLiked, setIsLiked] = useState<Boolean>(false);
 
     return (
         <Col md={3} className="p-4">
