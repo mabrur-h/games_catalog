@@ -1,5 +1,6 @@
 import {Button, ButtonGroup, Form, Tab} from "react-bootstrap";
 import "./style.css"
+import {Link} from "react-router-dom";
 
 export default function LoginComponent() {
     return (
@@ -16,7 +17,7 @@ export default function LoginComponent() {
                 <Button variant="danger" type="submit" className="px-3">
                     Sign In
                 </Button>
-                <a href="/password" className="text-decoration-none link-primary ps-3">Forgot password?</a>
+                <Link to="/password" className="text-decoration-none link-primary ps-3">Forgot password?</Link>
             </Form.Group>
         </Form>
     )

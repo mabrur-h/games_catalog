@@ -1,8 +1,9 @@
 import axios from 'axios'
+import UserType from "../../types/user.type";
 
 const API_URL = '/api/users'
 
-const register = async (userData: object) => {
+const register = async (userData: UserType) => {
     const response = await axios.post(API_URL, userData)
 
     if (response.data) {
