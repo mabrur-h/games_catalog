@@ -1,5 +1,7 @@
 import {Card, Button, Row, Col, Image} from 'react-bootstrap'
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {toast} from "react-toastify";
+import {reset} from "../../redux/services/auth/authSlice";
 
 export default function GameCardComponent() {
     const [isLiked, setIsLiked] = useState<Boolean>(false);

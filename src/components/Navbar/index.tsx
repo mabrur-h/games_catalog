@@ -1,8 +1,8 @@
 import {Navbar, Container, Nav, Button} from "react-bootstrap"
 import {useDispatch, useSelector} from "react-redux";
 import {Link, useNavigate} from "react-router-dom";
-import {AppDispatch} from "../../app/store";
-import {logout, reset} from "../../services/auth/authSlice";
+import {AppDispatch} from "../../redux/store";
+import {logout, reset} from "../../redux/services/auth/authSlice";
 
 export default function NavbarComponent() {
     const navigate = useNavigate()
