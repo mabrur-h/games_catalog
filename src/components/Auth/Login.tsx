@@ -7,9 +7,10 @@ import {toast} from "react-toastify";
 import {login, reset} from "../../services/auth/authSlice";
 import Spinner from "../Spinner";
 import UserType from "../../types/user.type";
+import {AppDispatch} from "../../app/store";
 
 export default function LoginComponent() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<UserType>({
         email: '',
         password: ''
     })
@@ -17,7 +18,7 @@ export default function LoginComponent() {
     const {email, password} = formData
 
     const navigate = useNavigate()
-    const dispatch = useDispatch()
+    const dispatch = useDispatch<AppDispatch>()
 
     const { user, isLoading, isError, isSuccess, message } = useSelector(
         (state: any) => state.auth
@@ -52,7 +53,7 @@ export default function LoginComponent() {
             password
         }
 
-        // dispatch(login(userData))
+        dispatch(login(userData))
 
         if (isLoading) {
             return <Spinner />

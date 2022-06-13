@@ -9,12 +9,11 @@ export default function NavbarComponent() {
     const dispatch = useDispatch<AppDispatch>()
     let {user} = useSelector((state: any) => state.auth)
     user = JSON.parse(user)
-    console.log(user)
 
     const onLogout = () => {
         dispatch(logout())
         dispatch(reset())
-        navigate('/')
+        navigate('/auth')
     }
 
     return (
