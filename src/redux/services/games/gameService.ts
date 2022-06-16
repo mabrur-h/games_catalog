@@ -9,9 +9,9 @@ const getGames = async () => {
     }
   }
 
-  const response = await axios.post(API_URL, `fields involved_companies.*;where involved_companies != null;where rating > 75;`, config)
+  const response = await axios.post(API_URL, `fields name, rating, storyline, summary, cover, first_release_date;limit 20;`, config)
 
-  return response.data
+  return response.data.data
 }
 
 const gameService = {

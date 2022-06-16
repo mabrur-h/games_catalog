@@ -20,7 +20,7 @@ export default function HomePage() {
   const {games, isLoading, isError, message} = useSelector(
     (state: any) => state.games
   )
-
+  console.log(games)
   useEffect(() => {
     if (isError) {
       console.log(message)
@@ -47,15 +47,17 @@ export default function HomePage() {
       <HeaderComponent/>
       <div className="container-fluid">
         <Row>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
-          <GameCardComponent/>
+          {
+            games.map((game: any) => (
+              <GameCardComponent
+                key={game.id}
+                release={game.first_release_date}
+                game_name={game.name}
+                summary={game.summary}
+                rating={game?.rating}
+              />
+            ))
+          }
         </Row>
       </div>
     </div>
